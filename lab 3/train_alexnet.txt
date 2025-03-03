@@ -1,0 +1,1 @@
+python train_freeze_.py -m alexnet -s alexnet.pth -p alexnet.png

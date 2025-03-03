@@ -1,0 +1,26 @@
+unaugmented:
+python test3.py -s weights32_normval_a5500.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images"
+
+flip:
+python test3.py -s weights32f_normval_a5500.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images"
+
+noise:
+python test3.py -s weights32n_normval_a5500.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images"
+
+rotate:
+python test3.py -s weights32r_normval_a5500.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images"
+
+flip, noise:
+python test3.py -s weights32fn_normval_a5500.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images"
+
+flip, rotate:
+python test3.py -s weights32fr_normval_a5500.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images"
+
+noise, rotate:
+python test3.py -s weights32nr_normval_a5500v2.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images"
+
+flip, noise, rotate:
+python test3.py -s weights32fnr_normval_a5500v2.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images"
+
+
+

@@ -1,0 +1,6 @@
+ensemble model for 5 epochs
+python ensemble-top1.py --alexnet_weights 5_alexnet_lr1e4.pth --resnet18_weights 5_resnet18_lr1e4.pth --vgg16_weights 5_vgg16_lr1e4.pth --output_file ensemble_5.csv
+
+ensemble model for full convergence
+python ensemble-top1.py --alexnet_weights alexnet_lr1e4.pth --resnet18_weights resnet18_lr1e4.pth --vgg16_weights vgg16_lr1e4.pth --output_file ensemble_full.csv
+

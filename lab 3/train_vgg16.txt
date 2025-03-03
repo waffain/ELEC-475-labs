@@ -1,0 +1,1 @@
+python train_freeze_.py -m vgg16 -s vgg16.pth -p vgg16.png

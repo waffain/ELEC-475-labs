@@ -1,0 +1,4 @@
+python model-evaluation-dec.py --weights_dir ./ --output_file output.csv
+
+this script evaluates all the files in the folder
+

@@ -1,0 +1,40 @@
+visualizing student model:
+this will give the moiu per class as well as the average miou
+it will then show the image with the best iou and the image with the worst iou along with ground truth and predicted masks
+it will then ask you to enter an index and show the corresponding image with ground truth and predicted masks
+
+
+no distillation
+python evaluate-visualize-mobilenet.py --weights best_model.pth
+
+response based
+python evaluate-visualize-mobilenet.py --weights best_response_model.pth
+
+feature based
+python evaluate-visualize-mobilenet.py --weights best_feature_model.pth
+
+
+
+timing code:
+note: deterministic settings are enabled to ensure that no optimizations skew the timing results
+these settings makes the miou calculation slightly lower
+cudnn.benchmark = False
+cudnn.deterministic = True
+cudnn.enabled = False
+
+timing resnet50:
+python resnet50-miou-timed.py
+
+timing student model:
+
+no distillation 
+python mobilenet-miou-timed.py --weights best_model.pth
+
+response based
+python mobilenet-miou-timed.py --weights best_response_model.pth
+
+feature based
+python mobilenet-miou-timed.py --weights best_feature_model.pth
+
+
+

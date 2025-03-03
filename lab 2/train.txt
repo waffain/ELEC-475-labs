@@ -1,0 +1,28 @@
+the provided dataset contains corrupted images
+please redownload the dataset from here before running the training
+https://www.robots.ox.ac.uk/~vgg/data/pets/ 
+
+unaugmented:
+python train_val2.py -s weights_u.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images" -p plot_u.png -a u
+
+flip:
+python train_val2.py -s weights_f.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images" -p plot_f.png -a f
+
+noise:
+python train_val2.py -s weights_n.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images" -p plot_n.png -a n
+
+rotate:
+python train_val2.py -s weights_r.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images" -p plot_r.png -a r
+
+
+flip noise:
+python train_val2.py -s weights_fn.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images" -p plot_fn.png -a fn
+
+flip rotate:
+python train_val2.py -s weights_fr.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images" -p plot_fr.png -a fr
+
+noise rotate:
+python train_val2.py -s weights_nr.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images" -p plot_nr.png -a nr
+
+flip, noise, rotate:
+python train_val2.py -s weights_fnr.pth -f "C:\Users\waffain\Documents\475 redo labs\lab2\images" -p plot_fnr.png -a fnr

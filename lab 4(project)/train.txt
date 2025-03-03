@@ -1,0 +1,16 @@
+no distillation:
+python train_mobilenetv3_wce.py
+the plot and the weights will be stored in checkpoints/no_distill_yyyymmdd_hhmmss
+
+
+response distillation
+python response_distill_wce_fixplot.py
+the plot and the weights will be stored in checkpoints/response_distill_wce_fixplot_yyyymmdd_hhmmss
+
+
+feature distillation
+python feature_distill_wce_v4.py
+the plot and the weights will be stored in checkpoints/feature_distillation_v4_yyyymmdd_hhmmss
+
+yyyymmdd_hhmmss is the timestamp of running the file
+the best performing weights will start with best_

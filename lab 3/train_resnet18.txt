@@ -1,0 +1,1 @@
+python train_freeze_.py -m resnet18 -s resnet18.pth -p resnet18.png
